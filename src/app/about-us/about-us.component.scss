@@ -1,0 +1,51 @@
+.kalam {
+    font-family: 'Kalam', cursive;
+}
+
+.pacifico {
+    font-family: 'Pacifico', cursive, sans-serif;
+    font-size: 25px;
+}
+
+.display-flex {
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+}
+
+.fun-facts {
+    width: 80%;
+}
+
+.quote {
+    width: 100%;
+}
+    
+.paragraph {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 150px;
+    margin: 5px;
+    font-size: 20px;
+    background-color: lightblue;
+}
+
+.photo {
+    margin: auto;
+    background-color: lightgreen;
+    height: 120px;
+    width: 240px;
+    display: block;
+}
+
+.zoom:hover {
+    transform: scale(1.5);
+}
+
+.photo {
+    float: left;
+    background-color: lightgreen;
+    height: 140px;
+    width: 240px;
+  /*  display: block; */
+}

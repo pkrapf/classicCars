@@ -1,0 +1,58 @@
+<div>
+  <form>
+    <fieldset class="form-display bg-color">
+      <div>
+        <label class="font-size" for="firstName">First Name</label>
+        <input class="inputField margin-left10px" type="text" name="firstName" id="firstName">
+      </div>
+      <br>
+      <div>
+        <label class="font-size" for="lastName">Last Name</label>
+        <input class="inputField margin-left10px" type="text" name="lastName" id="lastName">
+      </div>
+      <br>
+      <label class="font-size" for="emailAddress">Email Address</label>
+      <input class="inputField margin-left10px" type="text" name="emailAddress" id="emailAddress">
+      <br>
+      <br>
+      <div>
+        <label class="font-size" for="phoneNumber">Phone Number</label>
+        <input class="inputField margin-left10px" type="text" name="Phone Number" id="phoneNumber">
+
+      </div>
+      <br>
+      <fieldset class="font-size width400">
+        <legend>Best time to contact:</legend>
+        <div>
+          <input type="radio" id="contactChoice1" name="contactTime" value="morning">
+          <label for="contactChoice1">Email</label>
+
+          <input type="radio" id="contactChoice2" name="contactTime" value="afternoon">
+          <label for="contactChoice2">Phone</label>
+
+          <input type="radio" id="contactChoice3" name="contactTime" value="evening">
+          <label for="contactChoice3">Mail</label>
+        </div>
+      </fieldset>
+      <br>
+      <fieldset class="font-size width400">
+        <legend>Information Requested</legend>
+        <div>
+          <input type="radio" id="buyingACar" name="informationRequested" value="buyingACar">
+          <label for="buyingACar">Buying A Car</label>
+
+          <input type="radio" id="sellingACar" name="informationRequested" value="sellingACar">
+          <label for="sellingACar">Selling A Car</label>
+
+          <input type="radio" id="other" name="informationRequested" value="other">
+          <label for="other">Other</label>
+        </div>
+      </fieldset>
+      <br>
+      <p class="font-size">Additional Information</p>
+      <textarea rows="10" cols="100">Leave a message</textarea>
+      <br>
+      <input class="button" type="submit">
+    </fieldset>
+  </form>
+</div>

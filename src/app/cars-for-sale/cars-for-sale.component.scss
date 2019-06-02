@@ -1,0 +1,54 @@
+.photo {
+    margin: auto;
+    background-color: lightgreen;
+    height: 120px;
+    width: 240px;
+    display: block;
+}
+
+.zoom:hover {
+    transform: scale(1.5);
+}
+
+.listofcarsforsale {
+    flex: 0 0 300px;
+    display: flex;
+    flex-flow: column wrap; 
+    /*width: 400px; */
+    float: left;}
+    
+.listsinglecar {
+    background-color: lightblue;
+    min-height: 30px;
+    margin: 5px;
+    color: red;
+    font-size: 25px;
+    float: left;
+}
+
+.cardetailist {
+    width: calc(100% - 300px); 
+    display: flow;   
+    /*width: 70%; */
+    float: right;
+    flex-flow: row wrap;  
+}
+
+.cardetail {
+    width: calc(100% - 300px); 
+    /*width: 70%; */
+    float: right;
+    font-size: 22px;
+}
+
+.photo {
+    float: left;
+    background-color: lightgreen;
+    height: 140px;
+    width: 240px;
+  /*  display: block; */
+}
+
+.margin10px {
+    margin-right: 10px;
+}

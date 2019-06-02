@@ -1,0 +1,40 @@
+<div>
+
+  <form [formGroup]="carsFormGroup" (ngSubmit)="carsSubmit()">
+
+    <div class="text-center font-size25">
+      <label>Year Make Model</label>
+      <input type="text margin-left5px" formControlName="yearMakeModel">
+      <div
+        *ngIf="carsFormGroup.controls['yearMakeModel'].invalid && (carsFormGroup.controls['yearMakeModel'].dirty || carsFormGroup.controls['yearMakeModel'].touched)">
+        <div class="text-color-red" *ngIf="carsFormGroup.controls['yearMakeModel'].errors.required">
+          Year Make Model is required
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center font-size25">
+      <label>Description</label>
+      <input type="text margin-left5px" formControlName="description">
+      <div
+        *ngIf="carsFormGroup.controls['description'].invalid && (carsFormGroup.controls['description'].dirty || carsFormGroup.controls['description'].touched)">
+        <div class="text-color-red" *ngIf="carsFormGroup.controls['description'].errors.required">
+          Description is required
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center font-size25">
+      <label>Image URL</label>
+      <input type="text margin-left5px" formControlName="imageURL">
+      <div
+        *ngIf="carsFormGroup.controls['imageURL'].invalid && (carsFormGroup.controls['imageURL'].dirty || carsFormGroup.controls['imageURL'].touched)">
+        <div class="text-color-red" *ngIf="carsFormGroup.controls['imageURL'].errors.required">
+          Image URL is required
+        </div>
+      </div>
+    </div>
+
+    <button class="font-size20" type="submit" [disabled]="!carsFormGroup.valid">Submit</button>
+  </form>
+</div>

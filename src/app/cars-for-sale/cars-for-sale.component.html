@@ -1,0 +1,21 @@
+<div>
+
+    <div class="listofcarsforsale">
+        <a class="listsinglecar" *ngFor='let car of cars' href="#element">{{car.yearMakeModel}}</a>
+    </div>
+
+    <div class="cardetaillist">
+        <div class="cardetail bg-color" *ngFor='let car of cars'>
+            <p>{{car.yearMakeModel}}<a id="element"></a>
+                <img class="photo zoom margin10px" src="{{car.imageURL}}">
+            </p>
+            <p>
+                {{car.description}}
+            </p>
+            <p>
+                <a href="#top">Return to top</a>
+            </p>
+        </div>
+    </div>
+
+</div>
