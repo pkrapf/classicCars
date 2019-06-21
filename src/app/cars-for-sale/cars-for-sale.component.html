@@ -6,8 +6,11 @@
 
     <div class="cardetaillist">
         <div class="cardetail bg-color" *ngFor='let car of cars'>
-            <p>{{car.yearMakeModel}}<a id="element"></a>
-                <img class="photo zoom margin10px" src="{{car.imageURL}}">
+            <!-- <p>{{car.yearMakeModel}}<a [id]="element"></a></p> -->
+            <a class="font-size25" [id]="element">{{car.yearMakeModel}}</a>
+            <!-- <p>{{car.yearMakeModel}} [id]="element" -->
+            <p>
+                <img class="photo zoom margin10px" alt="photo is not available" src="{{car.imageURL}}">
             </p>
             <p>
                 {{car.description}}

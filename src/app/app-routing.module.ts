@@ -10,7 +10,7 @@ const routes: Routes = [
 {path: 'about-us', component: AboutUsComponent},
 {path: 'cars-for-sale', component: CarsForSaleComponent},
 {path: 'contact-us', component: ContactUsComponent},
-{path: 'cars-admin', redirectTo: ''},
+{path: 'cars-admin', component: CarsAdminComponent},
 {path: '**', redirectTo: ''}
 ];
 

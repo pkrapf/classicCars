@@ -9,12 +9,7 @@ let pool = mysql.createPool({
     database: process.env.database,
     port: process.env.port
     
-    // correct 
-    // host: 'localhost',
-    // user: "todoAppadmin",
-    // password: "admin",
-    // database: "carinformation",
-    // port: 8889
+
 });
 
 module.exports.pool = pool;
