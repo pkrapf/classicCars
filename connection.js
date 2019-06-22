@@ -8,8 +8,6 @@ let pool = mysql.createPool({
     password: process.env.password,
     database: process.env.database,
     port: process.env.port
-    
-
 });
 
 module.exports.pool = pool;
