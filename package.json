@@ -4,6 +4,9 @@
   "scripts": {
     "ng": "ng",
     "start": "node server",
+    "dev": "concurrentdskfjmsd",
+    "front": "ng build --watch",
+    "backend": "nodemon server",
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
