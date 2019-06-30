@@ -1,6 +1,6 @@
 // const mysql = require("mysql");
 let mysql = require("mysql");
-require("./config");
+// require("./config");
 let pool = mysql.createPool({
     connectionLimit: 10,
     host: process.env.host,
